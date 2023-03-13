@@ -1,0 +1,44 @@
+.container>* {
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10rem 6rem 1fr 7rem;
+}
+.container>header {
+    grid-area: 1/1/2/-1;
+    display: grid;
+    place-content: center;
+}
+.container>nav {
+    grid-area: 2/1/3/-1;
+}
+.container>main {
+    grid-area: 3/1/4/3;
+}
+.mainArticles {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: .8rem;
+    place-content: center;
+}
+.content1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+}
+.nocturne {
+    border: .1rem solid black;
+    height: 40%;
+}
+.container>aside {
+    grid-area: 3/3/4/4;
+}
+.container>footer {
+    grid-area: -1/1/-2/-1;
+    display: grid;
+    place-content: center;
+}
