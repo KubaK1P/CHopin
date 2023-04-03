@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .mainArticles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        margin-bottom: 0.7rem;
+      }
+      label {
+        flex-basis: 34%;
+        margin: .7rem ;
+      }
+      .mainArticles > .firstMainArticle {
+        padding-bottom: 2rem;
+      }
+      input {
+        color: #1C7694;
+        transition-duration: 150ms;
+      }
+      input:hover {
+        font-size: 110%;
+        transition-duration: 150ms;
+      }
+      legend {
+        font-size: 140%;
+      }
+      .przyc {
+        padding: .7rem 2rem;
+        margin: .7rem .7rem .7rem 0;
+        border-radius: 15px;
+        transition-duration: 200ms;
+        background-color: #1C7694;
+        color: white;
+      }
+      .przyc:hover {
+        transition-duration: 200ms;
+        background-color: white;
+        color: #1C7694;
+        border: 2px solid #1C7694;
+        font-size: 115%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="titleDiv">
+          <h1>Fryderyk Chopin</h1>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">O mnie</a></li>
+          <li><a href="form.html">Formularz</a></li>
+          <li>
+            <a href="https://allegro.pl/listing?string=fryderyk%20chopin"
+              >Zakupy</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="mainArticles">
+          <div class="firstMainArticle">
+            <article>
+              <header><h2>Zapisz się już teraz</h2></header>
+              <form action="" method="get">
+                <fieldset>
+                  <legend>Info do kontaktu</legend>
+                  <label for="name"
+                    >Imię: <input type="text" id="name" name="name" required
+                  /></label>
+                  <label for="notname"
+                    >Nazwisko: <input type="text" id="notname" name="notname"
+                  /></label>
+                  <label for="mail"
+                    >Mail <input type="mail" id="mail" name="mail" required
+                  /></label>
+                </fieldset>
+                <fieldset>
+                  <legend>Preferencje</legend>
+                  <fieldset>
+                    <legend>Najepszy kompozytor</legend>
+                    <label for="Chopin"
+                      >Chopin<input
+                        type="radio"
+                        name="choice"
+                        id="Chopin"
+                        value="chopin"
+                    /></label>
+                    <label for="Bach"
+                      >Bach<input
+                        type="radio"
+                        name="choice"
+                        id="Bach"
+                        value="bach"
+                    /></label>
+                    <label for="Mozart"
+                      >Mozart<input
+                        type="radio"
+                        name="choice"
+                        id="Mozart"
+                        value="mozart"
+                    /></label>
+                  </fieldset>
+                  <label for="hasDog"
+                    >Masz psa? <input type="checkbox" name="dog" id="hasDog"
+                  /></label>
+                </fieldset>
+                <input type="reset" value="Resetuj" class="przyc">
+                <input type="submit" value="Zarejestruj się" class="przyc">
+              </form>
+              <footer>Zapisz się już dziś</footer>
+            </article>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div class="asideArticles">
+          <div class="firstAsideArticle">
+            <article>
+              <header>
+                <h2 id="titleAside">Oferta po podaniu ważnych danych osobowych</h2>
+              </header>
+              <div class="content2">
+                <p style="margin-left: .7rem;" class="p1">Nuty od chopina i informacje o jego nowych płytach</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </aside>
+      <footer>
+        <div class="footerDiv">
+          <h2>Jakub Kuś</h2>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+.container>* {
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10rem 6rem 1fr 7rem;
+}
+.container>header {
+    grid-area: 1/1/2/-1;
+    /* display: grid;
+    place-content: center; */
+    display: flex;
+    justify-content: center;
+}
+.titleDiv {
+    /* padding: 1rem ; */
+    display: grid;
+    place-content: center;
+    flex-basis: 80%;
+    border-radius: 45px;
+    background-color: #E09D58;
+}
+h1 {
+    font-size: 320%;
+    color: white;
+}
+.container>nav {
+    grid-area: 2/1/3/-1;
+    margin-top: .7rem;
+    padding-top: .7rem;
+    background-color: #FFBF7D;
+    border-radius: 15px;
+}
+nav>ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+nav>ul>li {
+    list-style-type: none;
+    width: 80%;
+    background-color: #A0D0E0;
+    /* border: .1rem solid black; */
+    border-radius: 45px;
+    transition-duration: 200ms;
+}
+nav>ul>li:hover {
+    background-color: #1C7694;
+    transition-duration: 200ms;
+}
+li>a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: .3rem 0 ;
+    transition-duration: 200ms;
+}
+li>a:hover {
+    color: white;
+    transition-duration: 200ms;
+}
+.container>main {
+    grid-area: 3/1/4/3;
+    padding: 2.5rem;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+    background-color: #E09D58;
+    border-radius: 15px;
+}
+.mainArticles {
+    display: grid;
+    /* height: 100%; */
+    grid-template-columns: 1fr 1fr;
+    column-gap: .8rem;
+    place-content: center;
+}
+article {
+    height: 60%;
+}
+
+.asideArticles {
+    display: grid;
+    height: 100%;
+    /* column-gap: .8rem; */
+    place-content: center;
+}
+
+.firstMainArticle {
+    width: 80%;
+    height: 100%;
+    /* margin: auto; */
+    /* margin-left: 3rem; */
+    padding: 0 2rem;
+    background-color: #FFBF7D;
+    border-radius: 20px;
+    height: 90%; /*To sus*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+    /* display: grid;
+    place-content: center; */
+}
+.secondMainArticle {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    /* display: grid;
+    place-content: center; */
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+    padding: 0 2rem;
+    background-color: #FFBF7D;
+    border-radius: 20px;
+    height: 90%; /*To sus*/
+    padding-top: 2rem;
+}
+#drugiArt {
+    margin: 20% 0;
+}
+.microContent1 {
+    margin-right: 2rem;
+}
+h2 {
+    margin: 1rem 2rem;
+    padding: .3rem 2rem .3rem .7rem;
+    border-radius: 15px;
+    background-color: #A0D0E0;
+    color: #1C7694;
+}
+h2>a {
+    color: #1C7694;
+    transition-duration: 200ms;
+}
+h2>a:hover {
+    color: #15647e;
+    transition-duration: 200ms;
+    font-size: 115%;
+}
+.content1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+    place-content: center;
+    
+}
+.content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.content3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* nie to */
+    padding: 0 1rem;
+
+}
+.microContent3 {
+    display: grid;
+    place-content: center;
+}
+.microContent2 {
+    padding-right: 5rem;
+}
+.firstAsideArticle {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    padding: 0 1rem;
+    background-color: #A0D0E0;
+    padding: 2rem .7rem;
+    margin: 4rem 2.5rem;
+    border-radius: 20px;
+}
+.nocturne {
+    border: .1rem solid black;
+    height: 40%;
+}
+.fryderyk {
+    border: .1rem solid black;
+    width: 65%;
+    margin: 0 2.5rem;
+}
+.frycekImg {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+}
+.container>aside {
+    grid-area: 3/3/4/4;
+    background-color: #1C7694;
+    margin: .7rem;
+    border-radius: 15px;
+}
+#titleAside {
+    background-color: white;
+    color: #1C7694;
+}
+.titleAside {
+    background-color: white;
+    color: #1C7694;
+}
+.container>footer {
+    grid-area: -1/1/-2/-1;
+    display: flex;
+    justify-content: center;
+}
+.footerDiv {
+    padding: .7rem 3rem;
+    flex-basis: 70%;
+    align-self: center;
+    background-color: #FFBF7D;
+    border-radius: 15px;
+}
+
+.footerDiv>h2 {
+    text-align: center;
+}
